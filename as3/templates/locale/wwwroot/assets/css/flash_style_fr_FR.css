@@ -1,0 +1,23 @@
+html {
+	height: 100%;
+	overflow: hidden;
+}
+				
+#content {
+	width: 100%;
+	height: 100%;
+}
+
+body {
+	height: 100%;
+	margin: 0;
+	padding: 0;
+	background: #0000000;
+}
+
+.title {
+	font-family:	"HelveticaNeueLT Pro 67 MdCn";
+	font-size:50;
+	color:#000000;
+	letter-spacing: 0;
+}

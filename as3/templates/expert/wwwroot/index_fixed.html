@@ -1,0 +1,26 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" lang="en">
+    <head>
+        <title></title>
+        <meta http-equiv="content-type" content="text/html; charset=utf-8" />
+        <script type="text/javascript" src="assets/scripts/swfobject.js"></script>
+        <script type="text/javascript" src="assets/scripts/swfaddress.js"></script>
+        <link rel="stylesheet" type="text/css" href="assets/css/html_style.css">
+    </head>
+    <body>
+        <div id="content" align="center">
+            <p>In order to view this page you need JavaScript and Flash Player 9+ support!</p>
+        </div>
+        <script type="text/javascript">
+        // <![CDATA[
+			var so = new SWFObject("assets/swfs/shell.swf?t=" +new Date().getTime(), "flash_content", "800", "500", "9", "#000000");
+			so.useExpressInstall("assets/swfs/expressinstall.swf");
+			so.addParam("menu", "false");
+			so.addParam("scale", "noscale");
+			so.addParam("base", "assets/swfs/");
+			so.addParam("wmode", "transparent");      
+			so.write("content");
+        // ]]>
+        </script>
+    </body>
+</html>

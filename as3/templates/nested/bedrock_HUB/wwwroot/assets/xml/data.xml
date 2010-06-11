@@ -1,0 +1,85 @@
+<config>
+   <layout>
+      <container>
+         <name>site</name>
+      </container>
+      <container>
+         <name>section</name>
+      </container>
+      <container>
+         <name>navigation</name>
+      </container>
+      <container>
+         <name>footer</name>
+      </container>
+      <container>
+         <name>preloader</name>
+      </container>
+      <container>
+         <name>shared</name>
+      </container>
+      <container>
+         <name>blocker</name>
+      </container>
+      <container>
+         <name>overlay</name>
+      </container>
+   </layout>
+   <sections>
+      <section default="true">
+         <label>Homepage</label>
+         <alias>homepage</alias>
+         <files>
+            <file>[xml_path]data.xml</file>
+            <file>[audio_path]data.xml</file>
+         </files>
+      </section>
+      <section>
+         <label>Sub Page</label>
+         <alias>sub_page</alias>
+      </section>
+   </sections>
+   <environments>
+      <environment name="default">
+         <!--Output Settings-->
+         <output_level>2</output_level>
+         <tracking_enabled>false</tracking_enabled>
+         <!--Path Information-->
+         <image_path>../images/</image_path>
+         <audio_path>../audio/</audio_path>
+         <video_path>../video/</video_path>
+         <download_path>../downloads/</download_path>
+         <xml_path>../xml/</xml_path>
+         <swf_path>../swfs/</swf_path>
+         <!--Services-->
+         <service>
+            <alias>general_remoting</alias>
+            <type>remoting</type>
+            <url>http://airwaves.dev.ichameleongroup.com/flashservices/gateway</url>
+            <path>model.remoting</path>
+         </service>
+         <!--Tracking-->
+         <tracking>
+            <alias>urchin</alias>
+            <type>Urchin</type>
+         </tracking>
+      </environment>
+      <environment name="local">
+         <patterns>
+            <pattern>file://</pattern>
+         </patterns>
+         <image_path>images/</image_path>
+      </environment>
+      <environment name="development">
+         <patterns>
+            <pattern>ichameleongroup</pattern>
+         </patterns>
+      </environment>
+      <environment name="staging">
+         <patterns>
+            <pattern>staging</pattern>
+         </patterns>
+      </environment>
+      <environment name="production"/>
+   </environments>
+</config>

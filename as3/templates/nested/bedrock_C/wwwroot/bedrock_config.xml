@@ -1,0 +1,117 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<config>
+  <settings>
+    <!--General Settings-->
+    <general>
+      <shell_preloader_time>3</shell_preloader_time>
+      <page_preloader_time>0</page_preloader_time>
+      <auto_intro_enabled>true</auto_intro_enabled>
+      <auto_default_enabled>true</auto_default_enabled>
+      <auto_blocker_enabled>true</auto_blocker_enabled>
+      <deep_linking_enabled>false</deep_linking_enabled>
+      <cache_prevention_enabled>false</cache_prevention_enabled>
+      <tracking_enabled>true</tracking_enabled>
+      <shared_enabled>false</shared_enabled>
+      <shared_sounds_enabled>false</shared_sounds_enabled>
+      <fonts_enabled>false</fonts_enabled>
+      <css_enabled>false</css_enabled>
+      <resource_bundle_enabled>false</resource_bundle_enabled>
+      <locale_enabled>false</locale_enabled>
+      <show_pages_in_context_menu>false</show_pages_in_context_menu>
+    </general>
+    <!--Locale Settings-->
+    <locale>
+      <default_locale>en_GB</default_locale>
+      <locale_list>en_GB,fr_FR</locale_list>
+      <localized_files>fonts,css,resource_bundle,shared</localized_files>
+      <locale_delimiter>_</locale_delimiter>
+    </locale>
+    <!--Filename Settings-->
+    <file_names>
+      <shared_file_name>shared</shared_file_name>
+      <site_file_name>site</site_file_name>
+      <fonts_file_name>fonts</fonts_file_name>
+      <css_file_name>flash_style</css_file_name>
+      <resource_bundle_file_name>resource_bundle</resource_bundle_file_name>
+    </file_names>
+  </settings>
+  <layout>
+    <container>
+      <name>shared</name>
+    </container>
+    <container>
+      <name>site</name>
+    </container>
+    <container>
+      <name>page</name>
+    </container>
+    <container>
+      <name>preloader</name>
+    </container>
+    <container>
+      <name>blocker</name>
+    </container>
+    <container>
+      <name>overlay</name>
+    </container>
+  </layout>
+  <pages>
+    <page default_page="true">
+      <label>Homepage</label>
+      <alias>homepage</alias>
+    </page>
+  </pages>
+  <environments>
+    <environment name="default">
+      <!--Logger Settings-->
+      <local_log_level>ALL</local_log_level>
+      <event_log_level>ERROR</event_log_level>
+      <remote_log_level>NONE</remote_log_level>
+      <remote_log_url></remote_log_url>
+      <!--Path Settings-->
+      <swf_path>../../../../bedrock_C/wwwroot/assets/swfs/</swf_path>
+      <xml_path>../xml/</xml_path>
+      <image_path>../images/</image_path>
+      <video_path>../video/</video_path>
+      <audio_path>../audio/</audio_path>
+      <font_path>../fonts/</font_path>
+      <css_path>../css/</css_path>
+      <resource_bundle_path>../xml/</resource_bundle_path>
+      <shared_path>../swfs/</shared_path>
+    </environment>
+    <environment name="local">
+      <!--General Settings-->
+      <patterns>
+        <pattern>file://</pattern>
+      </patterns>
+      <!--Path Settings-->
+    </environment>
+    <environment name="development">
+      <!--General Settings-->
+      <patterns>
+        <pattern>dev</pattern>
+      </patterns>
+      <!--Path Settings-->
+    </environment>
+    <environment name="localhost">
+      <!--General Settings-->
+      <patterns>
+        <pattern>localhost</pattern>
+      </patterns>
+      <!--Path Settings-->
+      <swf_path>/nested/bedrock_C/wwwroot/assets/swfs/</swf_path>
+    </environment>
+    <environment name="staging">
+      <!--General Settings-->
+      <patterns>
+        <pattern>staging</pattern>
+      </patterns>
+      <!--Path Settings-->
+    </environment>
+    <environment name="production">
+      <!--General Settings-->
+      <!--Path Settings-->
+      <swf_path>/nested/bedrock_C/wwwroot/assets/swfs/</swf_path>
+    </environment>
+  </environments>
+</config>
